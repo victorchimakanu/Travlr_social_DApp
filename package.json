@@ -1,10 +1,11 @@
 {
   "name": "Travlr",
   "version": "1.0.0",
+  "homepage": "https://victorchimakanu.github.io/Travlr_social_DApp",
   "license": "(MIT AND Apache-2.0)",
   "scripts": {
     "start": "cd frontend && npm run start",
-    "deploy": "cd contract && npm run deploy",
+    "deploy": "cd contract && npm run deploy && gh-pages -d build",
     "build": "npm run build:contract && npm run build:web",
     "build:web": "cd frontend && npm run build",
     "build:contract": "cd contract && npm run build",
@@ -14,7 +15,7 @@
     "postinstall": "cd frontend && npm install && cd .. && cd integration-tests && npm install && cd .. && cd contract && npm install"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "near-cli": "^3.3.0"
-  },
-  "dependencies": {}
+  }
 }

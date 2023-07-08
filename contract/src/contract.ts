@@ -35,7 +35,6 @@ class TravlrGaming {
   constructor(){                  //called when you deploy the first time 
     this.posts = new UnorderedMap("p");
     this.number_of_posts = 0; 
-    this.likes_by_user_id = new UnorderedMap("l");
     this.posts_by_tag = new UnorderedMap ("t");
   }
 
