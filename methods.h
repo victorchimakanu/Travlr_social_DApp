@@ -1,0 +1,5 @@
+DEFINE_NEAR_METHOD(add_post)
+DEFINE_NEAR_METHOD(get_all_posts)
+DEFINE_NEAR_METHOD(get_my_liked_posts)
+DEFINE_NEAR_METHOD(get_posts_by_tag)
+DEFINE_NEAR_METHOD(like_a_post)
